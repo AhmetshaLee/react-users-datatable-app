@@ -1,0 +1,75 @@
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 10px 20px;
+
+  font-family: 'Anonymous Pro', sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  min-width: 50px;
+  resize: horizontal;
+  overflow: auto;
+
+  background: #236192;
+  border: none;
+}
+
+.table td {
+  padding: 10px;
+
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  text-align: left;
+
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.table tr:hover td {
+  cursor: pointer;
+  background: #c04d360e;
+}
+
+.table tr:hover td:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 105%;
+  border-top: 2px solid #c7523f;
+  border-bottom: 2px solid #c7523f;
+}
+
+/* Рамка слева у первой ячейки */
+.table tr:hover td:first-child:after {
+  border-left: 2px solid #c7523f;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Рамка справа у последний ячейки */
+.table tr:hover td:last-child:after {
+  border-right: 2px solid #c7523f;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: auto;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}

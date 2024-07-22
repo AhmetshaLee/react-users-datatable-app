@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 1rem;
+
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.title::before {
+  content: '[';
+  color: #236192;
+}
+
+.title::after {
+  content: ']';
+  color: #236192;
+}
